@@ -1,0 +1,15 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Checkout</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="checkout">
+  <ion-list>
+    <ion-item *ngFor="let o of paymentMethods" >
+       {{ o.name }}
+    </ion-item>
+  </ion-list> 
+</ion-content>
+

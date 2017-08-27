@@ -1,0 +1,36 @@
+<ion-content>
+  <ion-list>
+    
+    <ion-item>
+      <ion-label fixed>Nome:</ion-label>
+      <ion-input type="text" [(ngModel)]="model.nome"></ion-input>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label>Sexo</ion-label>
+      <ion-select [(ngModel)]="model.sexo">
+        <ion-option value="M">Masculino</ion-option>
+        <ion-option value="F">Feminino</ion-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label fixed>celular:</ion-label>
+      <ion-input type="text" [(ngModel)]="model.celular"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label fixed>email:</ion-label>
+      <ion-input type="text" [(ngModel)]="model.email"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <button ion-button (click)="cadastrar()">Cadastrar</button>
+    </ion-item>    
+
+ </ion-list>
+
+  <ion-list>
+    ...
+  </ion-list>
+</ion-content>
